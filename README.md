@@ -22,7 +22,7 @@ A simple and responsive **Weather App** built using **HTML, CSS, and JavaScript*
 * Tailwind CSS
 
 ## 📸 Preview
-
+https://github.com/hadia-malik/weather-App/blob/main/assets/weather%20app%20preview.PNG
 
 ## 🔑 API
 
