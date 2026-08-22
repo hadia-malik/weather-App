@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="min-h-screen w-full text-[#314A62] bg-gradient-to-br from-[#89CCE9] via-[#67BCE0] to-[#426C91] flex flex-col gap-30 items-center">
+     <!-- heading -->
+        <h1 class="heading font-bold text-2xl md:text-3xl mt-3">Weather App</h1>
+        <!-- heading ends here -->
+    <!-- main container -->
+     <div class="main-card h-auto min-w-75 md:min-w-sm rounded-2xl px-2 py-4 border-[#C6E8F3] border-3 flex flex-col items-center backdrop-blur-md bg-white/20 shadow-2xl shadow-[#04466e]">
+        <!-- search box -->
+        <div class="search-box my-2 flex border-2 rounded-md hover:border-[#04466e] border-white/20">
+            <input class="input border-2 bg-[#C6E8F3] border-white/20 p-1 rounded-tl-md rounded-bl-md flex-1 focus:outline-none" type="text" placeholder="Enter city">
+            <button title="search" class="search-btn bg-[#C6E8F3] rounded-tr-md rounded-br-md hover:cursor-pointer border-white/20 border-2 p-1"><i class="fa-brands fa-sistrix"></i></button>
+        </div>
+        <!-- serach box ends here -->
+         <!-- box for temperature city weather image-->
+         <div class="temperature-box flex flex-col items-center my-2 md:mt-4 md:flex-row">
+          <img src="images/sunny.png" class="weather-img h-25 w-25 " alt="">
+          <div class="md:mx-auto px-2 md:ml-1">
+          <p class="city font-bold text-md pt-2">Lahore</p>
+          <p class="temp font-semibold text-md">32 <sup>0</sup>C</p>
+          <p class="weather font-bold text-md">sunny</p>
+          </div>
+         </div>
+         <!-- box for temperature city ends here -->
+          <!-- box for wind and humidity -->
+         <div class="windhumid-info flex gap-2 mt-2 md:gap-6 md:mt-4">
+            <div class="wind p-2 border-2 bg-white/10 backdrop-blur-sm rounded-xl border-[#C6E8F3] shadow-[#1771a8] shadow-xl">
+                <img src="images/wind.png" class="h-20 w-20 " alt="">
+                <p class="wind-para mt-2 font-bold text-md">23m/s</p>
+                <h3 class="font-bold text-md">wind speed</h3>
+            </div>
+            <div class="humid p-2 bg-white/10 border-2 backdrop-blur-sm rounded-xl border-[#C6E8F3] shadow-[#1771a8] shadow-xl">
+                <img src="images/humidity.png" class="h-20 w-20" alt="">
+                <p class="humid-para mt-2 font-bold text-md">45%</p>
+                <h3 class="font-bold text-md">Humidity</h3>
+            </div>
+         </div>
+         <!-- box for wind and humidity ends here -->
+     </div>
+     <!-- main card ends here -->
+     <script src="script.js"></script>
+</body>
+</html>
