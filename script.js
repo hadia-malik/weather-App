@@ -1,5 +1,5 @@
 let baseURL="https://api.openweathermap.org/data/2.5/weather?";
-let APIKey="&appid=a725c9c19d499db85a48f167cca560ee";
+let APIKey="&appid=e4e88c03acb1dde364f79f31dcfcf846";
 let metricUnit="&units=metric";
 //accessing inner text of default city
 let initialCity=document.querySelector(".city").innerText;
